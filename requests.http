@@ -1,0 +1,27 @@
+GET http://localhost:5000/books
+
+### ID parameter at the end of the path
+GET http://localhost:5000/books/4
+
+###
+POST http://localhost:5000/books/create
+Content-Type: application/json
+
+{
+  "name": "The Subtle Knife",
+  "author": "Philip Pullman",
+  "price": 11.75
+}
+
+### ID parameter at the end of the path
+PUT http://localhost:5000/books/update/3
+Content-Type: application/json
+
+{
+  "name": "The Subtle Knife",
+  "author": "Philip Pullman",
+  "price": 11.75
+}
+
+### ID parameter at the end of the path
+DELETE http://localhost:5000/books/delete/4
